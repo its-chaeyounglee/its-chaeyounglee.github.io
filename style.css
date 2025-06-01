@@ -1,26 +1,70 @@
 
+/* 전체 배경 + 폰트 스타일 */
 body {
-  background-color: #fcf9f3; /* 연한 베이지 배경 */
-  color: #333;               /* 본문 글씨 어두운 회색 */
+  background-color: #fcf9f3; /* 따뜻한 베이지 배경 */
+  color: #333333;
   font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3 {
-  color: #1e3d59; /* 네이비 계열 제목 */
+/* 제목 색상 */
+h1, h3 {
+  color: #1e3d59;
 }
 
+/* 섹션 제목 스타일 */
+h2 {
+  text-align: center;
+  color: #e27d60;  /* 따뜻한 코랄 오렌지 */
+  font-size: 28px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #f4d9c6;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* 섹션 레이아웃 */
+section {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  margin: 30px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  max-width: 800px;
+}
+
+/* 링크 스타일 */
 a {
   color: #0077cc;
+  text-decoration: none;
 }
 
 a:hover {
   color: #005999;
 }
 
-section {
-  background-color: white;
-  border-radius: 12px;
-  padding: 30px;
-  margin-bottom: 40px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+/* 버튼 스타일 (CV 등) */
+a.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1e3d59;
+  color: #fff;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-weight: bold;
 }
+
+a.button:hover {
+  background-color: #163045;
+}
+
+/* footer */
+footer {
+  background-color: #f0f0f0;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
