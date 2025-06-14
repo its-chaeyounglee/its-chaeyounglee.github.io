@@ -1,120 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Chaeyoung Lee</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-  <!-- 🧭 Navigation Bar -->
-  <nav style="position: sticky; top: 0; background-color: #ffffffee; padding: 15px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 100;">
-    <a href="#about" style="margin: 0 20px; text-decoration: none; color: #1e3d59;">About</a>
-    <a href="#education" style="margin: 0 20px; text-decoration: none; color: #1e3d59;">Education</a>
-    <a href="#experiences" style="margin: 0 20px; text-decoration: none; color: #1e3d59;">Experiences</a>
-    <a href="#projects" style="margin: 0 20px; text-decoration: none; color: #1e3d59;">Projects</a>
-    <a href="#resume" style="margin: 0 20px; text-decoration: none; color: #1e3d59;">Resume</a>
-    <a href="#contact" style="margin: 0 20px; text-decoration: none; color: #1e3d59;">Contact</a>
-  </nav>
-  
-  <!-- 🌼 Header (페이지 최상단 인사말) -->
-  <header style="text-align: center; padding: 60px 20px;">
-    <h1>Hello 🖐, I am Chaeyoung Lee 😊</h1>
-    <p>Welcome to my website!</p>
-  </header>
-  
-  <!-- 🌿 About Me Section -->
-  <section id="about" style="padding: 40px; max-width: 800px; margin: auto;" text-align: center;">
-    <!-- 🖼️ Profile Photo -->
-    <div style="margin-bottom: 20px;">
-      <img src="profile1.jpg" alt="Profile Photo"
-           style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover;" />
-    </div>
-    <h2>About Me</h2>
-    <p>I am an undergraduate student majoring in Nursing at <em>Seoul National University</em>, where I am also pursuing interdisciplinary minors in Brain-Mind-Behavior and Learning Sciences, along with a Microdegree in Big Data.</p>
-    <p>With a strong interest in integrating digital technology with human-centered healthcare, I have participated in multiple research projects ranging from cognitive neuroscience studies to medical AI.</p>
-    <p>Currently, I am a research intern at the AI Medical Imaging Lab, where I contribute to developing and evaluating deep learning models for medical image analysis. I  am also leading the development of a Python-based self-assessment platform designed to enhance mental health awareness among university students.</p>
-    <p>My goal is to bridge clinical insight and data-driven innovation to create meaningful tools that improve people’s lives. I’m still learning, but I approach every new challenge with curiosity, humility, and a deep sense of responsibility.</p>
-    <p>In my free time, I love exploring cozy bookstores, enjoying musicals and art exhibitions, and reading everything from insightful non-fiction to comforting novels. I also cherish spending time with loved ones—whether it's taking peaceful walks with coffee in hand, sharing good food, talking with the people I care about, simply gazing at the sea to clear my mind, or capturing little joys in life, like witty signs or clever quotes that make me smile :) 📚🎶🌳🌼☕🍰💬🌊📸💛</p>
-  </section>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chaeyoung Lee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a2e0e6ad57.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #fcf9f3;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-white/90 shadow-sm py-4 z-50 text-center">
+      <ul class="flex justify-center space-x-6 text-[#1e3d59] font-medium">
+        <li><a href="#about" class="hover:underline hover:text-[#e27d60]">About</a></li>
+        <li><a href="#education" class="hover:underline hover:text-[#e27d60]">Education</a></li>
+        <li><a href="#experiences" class="hover:underline hover:text-[#e27d60]">Experiences</a></li>
+        <li><a href="#projects" class="hover:underline hover:text-[#e27d60]">Projects</a></li>
+        <li><a href="#resume" class="hover:underline hover:text-[#e27d60]">Resume</a></li>
+        <li><a href="#contact" class="hover:underline hover:text-[#e27d60]">Contact</a></li>
+      </ul>
+    </nav>
 
-  <!-- 🎓 Education & Experience Section -->
-  <section id="education" style="padding: 40px; max-width: 800px; margin: auto;">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>B.S. in Nursing</strong>, <em>Seoul National University</em> (2019–present)<br>
-      Interdisciplinary Minors: <strong>Brain-Mind-Behavior / Learning Sciences</strong><br>
-      Microdegree: <strong>Big Data</strong></li>
-    </ul>
-  </section>
+    <!-- Header -->
+    <header class="text-center py-16 px-4">
+      <h1 class="text-3xl font-bold text-[#1e3d59]">Hello 🖐, I am Chaeyoung Lee 😊</h1>
+      <p class="mt-4">Welcome to my website!</p>
+    </header>
 
-  <section id="experiences" style="padding: 40px; max-width: 800px; margin: auto;">
-    <h2>Experiences</h2>  
-    
-    <h3>Research Internships</h3>
-    <ul>
-      <li><strong>AI Medical Imaging Lab</strong>, SNU ECE (Jan 2025 – Present)<br>
-      - Conducted deep learning experiments for contrast-enhanced ultrasound(CEUS)-based liver tumor classification and performance evaluation through statistical analysis<br>
-      - Participated in a project on perineural invasion(PNI) prediction using MRI data from Samsung Medical Center</li>
+    <!-- About -->
+    <section id="about" class="bg-white p-10 rounded-xl shadow-md max-w-3xl mx-auto my-8 text-center">
+      <img src="profile1.jpg" alt="Profile" class="w-44 h-44 object-cover rounded-full mx-auto mb-6" />
+      <h2 class="text-[#e27d60] text-2xl font-semibold border-b-2 border-[#f4d9c6] inline-block pb-2 mb-6">About Me</h2>
+      <p class="mb-4">
+        I am an undergraduate student majoring in Nursing at Seoul National University. With a strong interest in integrating digital technology with human-centered healthcare, my goal is to bridge clinical insight and data-driven innovation to create meaningful tools that improve people’s lives. I’m still learning, but I approach every new challenge with curiosity, humility, and a deep sense of responsibility.
+      </p>
+      <p>
+        In my free time, I love exploring cozy bookstores, enjoying musicals and art exhibitions, and reading everything from insightful non-fiction to comforting novels. I also cherish spending time with loved ones—whether it's taking peaceful walks with coffee in hand, sharing good food, talking with the people I care about, simply gazing at the sea to clear my mind, or capturing little joys in life, like witty signs or clever quotes that make me smile :) 📚🎶🌳🌼☕🍰💬🌊📸💛
+      </p>
+    </section>
 
-      <li><strong>Developmental Cognitive Neuroscience Lab</strong>, SNU BCS (Sep 2024 – Dec 2024)<br>
-      - Investigated children's language development and episodic memory through behavioral experiments and analysis<br>
-      - Applied NLP techniques to compute cosine similarity between children’s free recall responses and reference content from experimental video stimuli<br>
-      - Awarded <em>Best Poster</em> at SNU Undergraduate Research Conference</li>
-    </ul>
+    <!-- Education -->
+    <section id="education" class="bg-white p-10 rounded-xl shadow-md max-w-3xl mx-auto my-8 text-center">
+      <h2 class="text-[#e27d60] text-2xl font-semibold border-b-2 border-[#f4d9c6] inline-block pb-2 mb-6">Education</h2>
+      <p><strong>Seoul National University</strong><br />B.S. degree expected in Nursing (2019–present)</p>
+    </section>
 
-    <h3>Additional Experiences</h3>
-    <ul>
-      <li><strong>Project Developer</strong>, SeNseU Mental Health App, SNU Programming Foundations course (Apr 2025 – Present)</li>
-      <li><strong>Content Editor</strong>, Pacific Publishing Co., Revised Mental Health Nursing textbook for the Korean National Nursing Licensing Exam (KNNLE) (Jan 2025 – Feb 2025)</li>
-      <li><strong>Private Tutor</strong> for middle and high school students in Math, English, and Science (2017 – Present)</li>
-    </ul>
-  </section>
-  
-  <!-- 💻 Projects Section -->
-  <section id="projects" style="padding: 40px; max-width: 800px; margin: auto;">
-    <h2>Projects</h2>
+    <!-- Experiences -->
+    <section id="experiences" class="bg-white p-10 rounded-xl shadow-md max-w-3xl mx-auto my-8 text-center">
+      <h2 class="text-[#e27d60] text-2xl font-semibold border-b-2 border-[#f4d9c6] inline-block pb-2 mb-6">Experiences</h2>
+      <div class="text-left space-y-6">
+        <div>
+          <p class="font-semibold">Undergraduate Research Intern <span class="text-sm text-gray-600">Jun 2025 – Present</span></p>
+          <p>• Human-Centered Artificial Intelligence Lab (HCAIL), SNU<br />• Supervisor: <strong><em>Prof. Hyunggu Jung</em></strong></p>
+        </div>
+        <div>
+          <p class="font-semibold">Undergraduate Research Intern <span class="text-sm text-gray-600">Jan 2025 – Jun 2025</span></p>
+          <p>• Medical AI Imaging Lab, SNU<br />• Supervisor: <strong><em>Prof. Namjoon Kim</em></strong></p>
+        </div>
+        <div>
+          <p class="font-semibold">Undergraduate Research Intern <span class="text-sm text-gray-600">Sep 2024 – Dec 2024</span></p>
+          <p>• Developmental Cognitive Neuroscience Lab, SNU<br />• Supervisor: <strong><em>Prof. Sangah Lee</em></strong></p>
+        </div>
+      </div>
+    </section>
 
-    <h3>SeNseU: A Mental Health Self-Assessment Platform</h3>
-    <p>Developed a Python-based application to screen mental health, sleep quality, and alcohol use among university students using validated tools (PHQ-9, PSQI-K, AUDIT-K). Implemented modular scoring functions, an interactive user flow, and personalized support suggestions</p>
+    <!-- Projects -->
+    <section id="projects" class="bg-white p-10 rounded-xl shadow-md max-w-5xl mx-auto my-8 text-center">
+      <h2 class="text-[#e27d60] text-2xl font-semibold border-b-2 border-[#f4d9c6] inline-block pb-2 mb-6">Projects</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="border rounded-lg p-6 shadow-sm bg-[#fffefc] text-left">
+          <h3 class="font-semibold text-lg mb-2">SeNseU: A Mental Health Self-Assessment Platform</h3>
+          <p class="text-sm text-gray-500 mb-2">Mar 2025 – Jun 2025</p>
+          <p>Developed a Python-based screening platform using PHQ-9, PSQI-K, AUDIT-K; proposed UX/UI improvements.</p>
+        </div>
+        <div class="border rounded-lg p-6 shadow-sm bg-[#fffefc] text-left">
+          <h3 class="font-semibold text-lg mb-2">CEUS-based Liver Tumor Classification</h3>
+          <p class="text-sm text-gray-500 mb-2">Jan 2025 – Jun 2025</p>
+          <p>Conducted deep learning experiments using CEUS data; analyzed padding and classification strategies.</p>
+        </div>
+        <div class="border rounded-lg p-6 shadow-sm bg-[#fffefc] text-left">
+          <h3 class="font-semibold text-lg mb-2">Language Development and Episodic Memory</h3>
+          <p class="text-sm text-gray-500 mb-2">Sep 2024 – Dec 2024</p>
+          <p>Led an NLP-based memory study; awarded Best Poster at SNU BMB Conference.</p>
+        </div>
+      </div>
+    </section>
 
-    <h3>CEUS-based Liver Tumor Classification</h3>
-    <p>Built two deep learning models to classify hepatocellular carcinoma (HCC) vs. focal nodular hyperplasia (FNH) using CEUS data. Evaluated the effects of different padding strategies and analyzed performance metrics. Contributed to manuscript development while working with clinical datasets under the guidance of the AI Medical Imaging Lab and Samsung Medical Center. <em>(In preparation)</em></p>
+    <!-- Resume -->
+    <section id="resume" class="bg-white p-10 rounded-xl shadow-md max-w-3xl mx-auto my-8 text-center">
+      <h2 class="text-[#e27d60] text-2xl font-semibold border-b-2 border-[#f4d9c6] inline-block pb-2 mb-6">Resume</h2>
+      <p class="mb-4">Download my CV here:</p>
+      <a href="Chaeyoung_Lee_CV_EN.pdf" target="_blank" class="inline-block px-4 py-2 bg-[#1e3d59] text-white rounded hover:bg-[#163045]">📄 English CV</a>
+      <a href="Chaeyoung_Lee_CV_KR.pdf" target="_blank" class="inline-block px-4 py-2 bg-[#1e3d59] text-white rounded hover:bg-[#163045] ml-4">📄 한글 이력서</a>
+    </section>
 
-    <h3>Language Development and Event Boundaries in Children’s Episodic Memory</h3> 
-    <p>Led an independent research project investigating how event boundaries in children’s episodic memory relate to language development. Analyzed children's free recall responses using NLP techniques and computed cosine similarity. Presented findings at the SNU Undergraduate Research Conference and won the 🏆 <em>Best Poster Award</em>.</p>
+    <!-- Contact -->
+    <section id="contact" class="bg-white p-10 rounded-xl shadow-md max-w-3xl mx-auto my-8 text-center">
+      <h2 class="text-[#e27d60] text-2xl font-semibold border-b-2 border-[#f4d9c6] inline-block pb-2 mb-6">Contact</h2>
+      <p class="mb-4">You’re welcome to reach out for collaboration, questions, or just to say hello!</p>
+      <p>📧 <strong>SNU Email</strong>: <a href="mailto:leecy0130@snu.ac.kr" class="text-blue-600 hover:text-blue-800">leecy0130@snu.ac.kr</a></p>
+      <p>📧 <strong>Personal Email</strong>: <a href="mailto:cchaeyyoung@gmail.com" class="text-blue-600 hover:text-blue-800">cchaeyyoung@gmail.com</a></p>
+      <p>💻 <strong>GitHub</strong>: <a href="https://github.com/its-chaeyounglee" class="text-blue-600 hover:text-blue-800">its-chaeyounglee</a></p>
+      <div class="text-2xl mt-4 space-x-4">
+        <a href="mailto:leecy0130@snu.ac.kr"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/its-chaeyounglee"><i class="fab fa-github"></i></a>
+      </div>
+    </section>
 
-    <h3>Mental Health Nursing Editing</h3>
-    <p>Revised the entire Mental Health Nursing section of a KNNLE preparation book. Ensured medical accuracy, clarity, and alignment with current clinical guidelines to support students preparing for the Korean Registered Nurse (RN) exam.</p>
-  </section>
-
-  <!-- 📄 Resume Section -->
-  <section id="resume" style="padding: 40px; max-width: 800px; margin: auto; text-align: center;">
-    <h2>Resume</h2>
-    <p>You can download or view my full CV below:</p>
-    <a href="Chaeyoung_Lee_CV.pdf" target="_blank" style="padding: 10px 20px; background-color: #4CAF50; color: white; border-radius: 5px; text-decoration: none;">📄 View My CV</a>
-  </section>
-
-  <!-- 📬 Contact Section (with icons and 2 emails) -->
-  <section id="contact" style="padding: 40px; max-width: 800px; margin: auto; text-align: center;">
-    <h2>Contact</h2>
-    <p>You’re welcome to reach out for collaboration, questions, or just to say hello!</p>
-    <div style="font-size: 18px; line-height: 1.8;">
-      <p>📧 <strong>SNU Email</strong>: <a href="mailto:leecy0130@snu.ac.kr">leecy0130@snu.ac.kr</a></p>
-      <p>📧 <strong>Personal Email</strong>: <a href="mailto:cchaeyyoung@gmail.com">cchaeyyoung@gmail.com</a></p>
-      <p>💻 <strong>GitHub</strong>: <a href="https://github.com/its-chaeyounglee" target="_blank">its-chaeyounglee</a></p>
-    </div>
-    <div style="font-size: 28px; margin-top: 10px;">
-      <a href="mailto:leecy0130@snu.ac.kr" target="_blank" style="margin: 0 10px;"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/its-chaeyounglee" target="_blank" style="margin: 0 10px;"><i class="fab fa-github"></i></a>
-      <!-- LinkedIn이 있다면 여기에 추가 -->
-    </div>
-  </section>
-
-<!-- 🌙 Footer -->
-<footer style="background-color: #f0f0f0; padding: 20px; text-align: center; font-size: 14px; color: #666;">
-  <p>© 2025 Chaeyoung Lee. All rights reserved.</p>
-  <p>Made with 📚 and ☕ in Seoul, South Korea.</p>
-</footer>
-</body>
+    <!-- Footer -->
+    <footer class="bg-[#f0f0f0] text-center text-sm text-gray-600 py-6">
+      <p>© 2025 Chaeyoung Lee. All rights reserved.</p>
+      <p>Made with 📚 and ☕ in Seoul, South Korea.</p>
+    </footer>
+  </body>
 </html>
